@@ -9,15 +9,17 @@ import java.util.*;
 public class app {
 
     public static void main(String[] args) {
-        Scanner  newScan = new Scanner(System.in);
+        Scanner newScan = new Scanner(System.in);
 
         //Input
-        Scanner in = new Scanner(System.in);
         System.out.print("What is the input string? ");
-        String input = in.nextLine();
+        String input = newScan.nextLine();
 
-        //Concat and output
-        System.out.println(input+" has "+input.length()+" characters.");
+        //Concat
+        String output = input+" has "+input.length()+" characters.";
+
+        //Output
+        System.out.println(output);
 
     }
 
